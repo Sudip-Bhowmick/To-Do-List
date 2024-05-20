@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+.lists_box {
+  padding: 40px 15px;
+  max-width: 440px;
+  margin: auto;
+}
+
+.add_task {
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.add_task input {
+  border-radius: 40px 0 0 40px;
+  max-width: 360px;
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+.add_task .plus_icon {
+  width: 50px;
+  padding: 12px 16px 12px 12px;
+  border-radius: 0 40px 40px 0;
+  background-color: #ffe168;
+  cursor: pointer;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+}
+
+.delete {
+  width: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.display_data {
+  padding-top: 30px;
+}
+.display_data .task {
+  background-color: rgba(204, 204, 204, 0.0823529412);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.display_data .task .task_data {
+  display: flex;
+  pointer-events: none;
+}
+.display_data .task span {
+  pointer-events: none;
+  margin-right: 12px;
+  line-break: anywhere;
+}
+.display_data .task .check {
+  border: 1px solid #000;
+  min-width: 15px;
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+  line-height: 1;
+  font-size: 13px;
+  text-indent: 2px;
+  position: relative;
+  top: 4px;
+  pointer-events: none;
+}
+.display_data .task.checked span {
+  text-decoration: line-through;
+}
+.display_data .task.checked .check::after {
+  content: "✓";
+}/*# sourceMappingURL=style.css.map */
